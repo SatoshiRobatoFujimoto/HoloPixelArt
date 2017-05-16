@@ -24,9 +24,19 @@ namespace HoloPixelArt
             Messenger.Instance.Broadcast(new ChangeColorMessage() { Color = Color.red });
         }
 
+        public void ChangeColorToYellow()
+        {
+            Messenger.Instance.Broadcast(new ChangeColorMessage() { Color = Color.yellow });
+        }
+
         public void ChangeColorToGreen()
         {
             Messenger.Instance.Broadcast(new ChangeColorMessage() { Color = Color.green });
+        }
+
+        public void ChangeColorToGray()
+        {
+            Messenger.Instance.Broadcast(new ChangeColorMessage() { Color = Color.gray });
         }
     }
 }
