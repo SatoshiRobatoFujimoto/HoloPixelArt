@@ -8,7 +8,6 @@ namespace HoloPixelArt
 {
     public class PixelManipulator : MonoBehaviour, IInputClickHandler
     {
-        public int Id;
         public AudioClip Click;
 
         private AudioSource _audioSource;
@@ -30,11 +29,15 @@ namespace HoloPixelArt
 
         public void OnInputClicked(InputClickedEventData eventData)
         {
-            if(Click != null)
+            _audioSource.PlayOneShot(Click);
+            if(_renderer.material.color == Color.white)
             {
-                _audioSource.PlayOneShot(Click);
+                _renderer.material.color = _color;
             }
-            _renderer.material.color = _color; 
+            else
+            {
+                _renderer.material.color = Color.white;
+            }
         }
     }
 }
