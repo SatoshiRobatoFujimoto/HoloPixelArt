@@ -4,7 +4,6 @@ A small-demo HoloLens app to draw pixel art... It was made in order to learn mor
 
 ![alt text](./pixelart.jpg "Pixel art image")
 
-
 There are 5 voice commands to change colors:
 
 - Change to gray
@@ -13,6 +12,6 @@ There are 5 voice commands to change colors:
 - Change to green
 - Change to yellow
 
-A huge part of the code is reused and based on the awesome work and article of [Joost van Schaik](https://github.com/LocalJoost).
+A huge part of the code is reused and based on the awesome work and articles of [Joost van Schaik](https://github.com/LocalJoost).
 
 
